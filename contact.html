@@ -1,0 +1,293 @@
+<html lang="en">
+<head>
+    <title>W3.CSS Template</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XYXYXYXYX5-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'UA-XYXYXYXYX5-2');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+    <style>
+    body {
+    background: linear-gradient(to right, #0f2027, #460815, #2c5364);
+    font-family: 'Poppins', sans-serif;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  align-items: center;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+*{box-sizing: border-box;}
+
+.help-container{
+  width: 300px;
+  height: 320px;
+  position: absolute;
+  left: 50px;
+  z-index: 1;
+  top: 300px;
+}
+
+.btn-help{
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(lightgray, darkturquoise);
+  border-radius: 25px;
+  border: 2px solid white;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 8px 14px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  z-index: 1;
+  
+}
+.help-title{
+  width: 0;
+  height: 50px;
+  background: linear-gradient(lightgray,darkturquoise);
+  top: 0px;
+  left: 25px;
+  border-radius: 0 25px 0 0;
+  text-align: center;
+}
+.help-title h2{
+  margin: 0;
+  padding: 0;
+  color: white;
+ display: none;
+  padding: 12px 35px;
+  
+}
+.help-body{
+  width: 270px;
+  height: 0;
+  background: gray;
+  position: absolute;
+  top: 50px;left: 0px;
+  text-align: justify;
+  border-radius: 0 0 25px 25px;
+
+}
+.help-body p{
+  margin: 0;
+  padding: 0;
+  color: white;
+  display: none;
+  padding: 12px 35px;
+}
+@keyframes fadein-right{
+  0% {opacity: 0; margin-left: 45px;}
+  100% {opacity: 1; margin-left: 0;}
+}
+@keyframes fadein-bottom{
+  0% {opacity: 0; margin-top: 45px;}
+  100% {opacity: 1; margin-top: 0;}
+}
+@keyframes fadeout-right{
+  0% {opacity: 1; margin-left: 0;}
+  100% {opacity: 0; margin-left: 45px;}
+}
+@keyframes fadeout-bottom{
+  0% {opacity: 1; margin-top: 0;}
+  100% {opacity: 0; margin-top: 45px;}
+}
+#form {
+    width: 400px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+    top: 400px;
+    align-items: center;
+    margin: auto;
+    
+}
+
+
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+img{
+  height: 300px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+          <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+          <a href="proiect.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOTARI</a>
+          <a href="program.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAM MEDICI</a>
+          <a href="pret.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRETURI</a>
+          <a href="protocoale.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROTOCOALE DE DIAGNOSTIC SI TRATAMENT</a>
+          <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAMARI</a>
+          <div class="w3-dropdown-hover w3-hide-small">      
+          </div>
+        </div>
+      </div>
+      <div class="w3-content" style="max-width:2000px;margin-top:46px" id="img">
+        <img src="oncologie2.jpg" style="width:100%">
+        <br><br>
+    
+
+    <div class="help-container">
+        <div class="btn-help" id="btnHelp">
+           ?
+        </div>
+        <div class="help-title" id="helpTitle">
+          <h2 id="heading">Ajutor</h2>
+        </div>
+        <div class="help-body" id="helpBody">
+          <p id="description" >
+            Pentru a realiza o programare, completati formularul afisat pe ecran, iar dupa trimitere ve-ti primi un mail de confirmare cu datele introduse.
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <div class="w3-row w3-padding-32">
+          <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i> Timisoara, Romania<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +407 54463154<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+          </div>
+          <div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+              <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                <div class="input-control">
+                  <label for="nume"><b>Nume</b></label>
+                  <input id="nume"  type="text" placeholder="Nume" required name="Name">
+                  <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <label for="prenume"><b>Prenume</b></label>
+                <input id="prenume" name="prenume" type="text">
+                <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <label for="email"><b>Email</b></label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <label for="doctor"><b>Doctor</b> </label>
+                    <select id="doc" name="doc">
+                        <option value="doc1">BOBORA RAZVAN DANIEL</option>
+                        <option value="doc2">CURESCU PETRA</option>
+                        <option value="doc3">STAN ALEXANDRA GEORGETA</option>
+                        <option value="doc4">NICULESCU ANCA</option>
+                        <option value="doc5">CATANA GIANINA RAMONA</option>
+                        <option value="doc6">PIRVULESCU ADRIANA IOANA</option>
+                    </select>
+                <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <label for="ziua"><b>Ziua</b> </label>
+                        <input type="radio" name="luni" value="l">
+                        <label for="l">Luni</label>
+                        <input type="radio" name="marti" value="m">
+                        <label for="m">Marti</label>
+                        <input type="radio" name="miercuri" value="mi">
+                        <label for="mi">Miercuri</label>
+                        <input type="radio" name="joi" value="j">
+                        <label for="j">Joi</label>
+                        <input type="radio" name="vineri" value="v">
+                        <label for="v">Vineri</label>
+                <div class="error"></div>
+                </div>
+              </div>
+              
+              <button type="submit">Trimite</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com" class="fa fa-instagram "></a>
+    <a href="https://www.snapchat.com" class="fa fa-snapchat w3-hover-opacity"></a>
+    <a href="https://ro.pinterest.com" class="fa fa-pinterest-p w3-hover-opacity"></a>
+    <a href="https://twitter.com/i/flow/login" class="fa fa-twitter w3-hover-opacity"></a>
+    <a href="https://ro.linkedin.com" class="fa fa-linkedin w3-hover-opacity"></a>
+    <p class="w3-medium"><i>Powered by Institutul de Oncologie</i></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

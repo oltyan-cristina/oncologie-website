@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XYXYXYXYX5-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'UA-XYXYXYXYX5-2');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+img{
+  height: 300px;
+}
+video {
+  width: 50%;
+  height: auto;
+ 
+  margin: auto;
+}
+.searchBar{
+  width: 100px;
+  height: 30px;
+ color: black;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+    <a href="proiect.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOTARI</a>
+    <a href="program.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAM MEDICI</a>
+    <a href="pret.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRETURI</a>
+    <a href="protocoale.html" class="w3-bar-item w3-button w3-padding-large">PROTOCOALE DE DIAGNOSTIC SI TRATAMENT</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAMARI</a>
+
+    
+    <div id="searchBox">
+      <input class="searchBar" type="text" id="input" placeholder="Search" />
+      <input type="button" id="searchBtn" value="Search" onclick="search();" />
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+  <a href="proiect.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DOTARI</a>
+  <a href="program.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROGRAM MEDICI</a>
+  <a href="pret.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRETURI</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROGRAMARI</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <img src="oncologie2.jpg" style="width:100%">
+
+  <br><br><br>
+<h1>Recomandări clinice</h1>
+  <h2>Cancerul mamar</h2>
+  <p id="p">Stabilirea diagnosticului se bazează pe trei componente majore: examinarea clinică,
+    imagistică şi anatomopatologică. Examinarea clinică include palparea bimanuală a sânilor şi a
+    limfoganglionilor locoregionali. Examinarea imagistică implică efectuarea mamografiei bilaterale şi
+    a ecografiei ambilor sâni şi a limfoganglionilor locoregionali. Rezonanţa magnetică nucleară nu
+    este o procedură de rutină, dar poate fi luată în considerare în cazul în care există incertitudini
+    privind diagnosticul, ca de exemplu în cazul investigării unui ţesut mamar cu densitate mare, sau
+    atunci când există ganglioni axilari dar nu se poate obiectiva tumora primară de la nivelul sânului.
+    Diagnosticul anatomopatologic trebuie să se bazeze pe biopsia obţinută sub ghidaj manual sau
+    preferabil ultrasonografic sau stereotactic. Înainte de orice intervenţie chirurgicală trebuie
+    efectuată biopsia sau, dacă acesta nu este posibilă, măcar aspiraţia citologică cu ac subţire,
+    pentru confirmarea diagnosticului de carcinom.
+    Diagnosticul patologic final ar trebui stabilit în conformitate cu clasificarea WHO şi TNM,
+    după examinarea completă a tuturor specimenelor tisulare prelevate. 
+    Discuţiile în comisii multidisciplinare formate din oncolog medical, chirurg specializat în
+      chirurgia sânului, radioterapeut şi anatomopatolog trebuie să ducă la o strategie terapeutică care
+      să integreze tratamentul local şi terapia sistemică şi să stabilească secvenţa optimă a acestora
+      [III, B].
+      Trebuie luată în considerare şi componenta ereditară a cancerului mamar, iar unde este
+      cazul trebuie discutate măsurile profilactice ce decurg în urma sfatului genetic şi testării genetice a
+      pacientei [IV, B].</p>
+<h2 id="p">Cancerul de col uterin</h2>
+<p id="p">Diagnosticul patologic ar trebui bazat pe examinarea unei biopsii chirurgicale şi raportat în
+  conformitate cu clasificarea WHO. 
+  Pentru majoritatea pacientelor opţiunea standard este chimioterapia paliativă. În cazuri
+    selectate se poate face excizie chirurgicală largă (de obicei exentraţie) şi radioterapie.</p>
+<h2>Carcinomul endometrial</h2>
+
+Stabilirea diagnosticului de carcinom endometrial necesită confirmare histopatologică.
+    Raportarea trebuie realizată în conformitate cu clasificarea patologică WHO. Aproximativ 80% din
+    cancerele endometriale sunt de subtip endometroid. Alte subtipuri sunt carcinomul seros (5-10%),
+    cu celule clare (1-5%), mucinos, mixt, epidermoid, cu celule tranziţionale şi nediferenţiat.
+    Carcinosarcomul endometrial este considerat un subtip aparte, cu prognostic rezervat, al
+    carcinomului endometrial.
+
+Stadializarea carcinomului endometrial este chirurgicală. Manevrele absolut necesare
+      pentru o stadializare corectă sunt prelevarea de lichid peritoneal sau lichid de lavaj în vederea
+      evaluării citologice, explorarea atentă a întregii cavităţi abdominale şi a limfoganglionilor pelvieni şi
+      paraaortici, precum şi efectuarea histerectomiei totale cu salpingo-ooforectomie bilaterală. În
+      cazurile cu risc crescut se recomandă adeseori limfadenectomie retroperitoneală şi omentectomie
+      (pentru carcinoamele seroase), cu toate că influenţa acestor manevre asupra supravieţuirii este
+      controversată [III, B]. 
+</p>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+  const p = document.getElementById("p");
+
+function search(){
+  let input = document.getElementById("input").value;
+
+  if(input !== ""){
+    let regExp = new RegExp(input, "gi");
+    p.innerHTML = (p.textContent).replace(regExp, "<mark>$&</mark>");
+  }
+}
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+
+</body>
+</html>

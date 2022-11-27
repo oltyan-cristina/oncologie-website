@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XYXYXYXYX5-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'UA-XYXYXYXYX5-2');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+img{
+  height: 300px;
+}
+video {
+  width: 50%;
+  height: auto;
+ 
+  margin: auto;
+}
+.searchBar{
+  width: 100px;
+  height: 30px;
+ color: black;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+    <a href="proiect.html" class="w3-bar-item w3-button w3-padding-large">DOTARI</a>
+    <a href="program.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAM MEDICI</a>
+    <a href="pret.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRETURI</a>
+    <a href="protocoale.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROTOCOALE DE DIAGNOSTIC SI TRATAMENT</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAMARI</a>
+
+    
+    <div id="searchBox">
+      <input class="searchBar" type="text" id="input" placeholder="Search" />
+      <input type="button" id="searchBtn" value="Search" onclick="search();" />
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DOTARI</a>
+  <a href="program.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROGRAM MEDICI</a>
+  <a href="pret.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRETURI</a>
+  <a href="protocoale.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROTOCOALE DE DIAGNOSTIC SI TRATAMENT</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROGRAMARI</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <img src="oncologie2.jpg" style="width:100%">
+
+  <p id="p">
+    <b>Nr. paturi: 60</b>
+    <ul class="a">
+      <li id="a"> Clinica este modernizata ,oferind confort pacientilor care se adreseaza pentru servicii  de diagnostic şi tratament al afecţiunilor oncologice.Terapiile se administreaza  individualizat, pe baza unor caracteristici ale pacientului dar si ale tumorii si pot fi :chimioterapie, hormonoterapie, imunoterapie sau combinatii.</li>
+      <li id="a">Deciziile de strategie terapeutica sunt luate in colectiv, in asa numitele „tumor board”-uri."</li>
+      <li id="a">In cadrul Clinicii sunt oferite si servicii de consiliere psihologica.</li>
+      <li>Structura oferă servicii atât în regim de spitalizare continuuă cât şi în regim de spital de zi.</li>
+      <li id="a">La parterul cladirii este amplasat biroul de primire a pacientilor, iar la etaj functionează cabinetele de consultaţii, precum şi Cabinetul Oncologic Judetean, care se ocupă cu gestionarea datelor referitoare la afecţiunile oncologice.</li>
+      <li>Preocuparea primordială a colectivului, constă în oferirea serviciilor medicale corespunzătoare standardelor europene, lucru confirmat de participarea Clinicii la numeroase studii multicentrice în cooperare cu instituţii similare din Europa şi S.U.A.</li>
+      <li>Activitatea de cercetare clinică este autorizată de către M.S. din Romania.</li>
+    </ul> 
+    </p>
+    
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="cabinet1.jpg" style="width:50%; height:50% ;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="cabinet2.jpg" style="width:50%; height:50% ;" >
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="cabinet4.jpg" style="width:50%; height:50% ;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"> 
+    </div>
+  </div>
+
+
+  
+<!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+  const p = document.getElementById("a");
+
+function search(){
+  let input = document.getElementById("input").value;
+
+  if(input !== ""){
+    let regExp = new RegExp(input, "gi");
+    p.innerHTML = (p.textContent).replace(regExp, "<mark>$&</mark>");
+  }
+}
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+
+</body>
+</html>

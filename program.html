@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XYXYXYXYX5-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'UA-XYXYXYXYX5-2');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+img{
+  height: 300px;
+}
+video {
+  width: 50%;
+  height: auto;
+ 
+  margin: auto;
+}
+.searchBar{
+  width: 100px;
+  height: 30px;
+ color: black;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+    <a href="proiect.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOTARI</a>
+    <a href="program.html" class="w3-bar-item w3-button w3-padding-large">PROGRAM MEDICI</a>
+    <a href="pret.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRETURI</a>
+    <a href="protocoale.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROTOCOALE DE DIAGNOSTIC SI TRATAMENT</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAMARI</a>
+
+    
+    <div id="searchBox">
+      <input class="searchBar" type="text" id="input" placeholder="Search" />
+      <input type="button" id="searchBtn" value="Search" onclick="search();" />
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+  <a href="proiect.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DOTARI</a>
+  <a href="pret.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRETURI</a>
+  <a href="protocoale.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROTOCOALE DE DIAGNOSTIC SI TRATAMENT</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROGRAMARI</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <img src="oncologie2.jpg" style="width:100%">
+
+  <br><br>
+    <h2>PROGRAMUL MEDICILOR ESTE URMATORUL:</h2>
+    <br><br>
+<div style="overflow-x: auto;">
+  <table>
+    <tr>
+      <th>Nr.crt</th>
+      <th>Adresa</th>
+      <th>Specialitate</th>
+      <th>Nume</th>
+      <th>Luni</th>
+      <th>Marti</th>
+      <th>Miercuri</th>
+      <th>Joi</th>
+      <th>Vineri</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>Str. Victor Babes, nr. 22</th>
+      <th>ONCOLOGIE</th>
+      <th>BOBORA RAZVAN DANIEL</th>
+      <th>10-11</th>
+      <th>10-11</th>
+      <th>9-10</th>
+      <th>10-11</th>
+      <th>13-14</th>
+    </tr>
+    <tr>
+    <th>2</th>
+      <th>Str. Victor Babes, nr. 22</th>
+      <th>ONCOLOGIE</th>
+      <th>CURESCU PETRA</th>
+      <th>12-13</th>
+      <th>13-14</th>
+      <th>12-13</th>
+      <th>8-9</th>
+      <th>11-12</th>
+    </tr>
+    <tr>
+      <th>3</th>
+      <th>Str. Victor Babes, nr. 22</th>
+      <th>ONCOLOGIE</th>
+      <th>STAN ALEXANDRA GEORGETA</th>
+      <th>8-9</th>
+      <th>9-10</th>
+      <th>13-14</th>
+      <th>12-13</th>
+      <th>12-13</th>
+    </tr>
+    <tr>
+      <th>4</th>
+      <th>Str. Victor Babes, nr. 22</th>
+      <th>ONCOLOGIE GENERALA, CHIMIOTERAPIE</th>
+      <th>NICULESCU ANCA</th>
+      <th>9-10</th>
+      <th>8-9</th>
+      <th>10-11</th>
+      <th>11-12</th>
+      <th>8-9</th>
+    </tr>
+    <tr>
+      <th>5</th>
+      <th>Str. Victor Babes, nr. 22</th>
+      <th>ONCOLOGIE MEDICALA</th>
+      <th>CATANA GIANINA RAMONA</th>
+      <th>13-14</th>
+      <th>12-13</th>
+      <th>11-12</th>
+      <th>9-10</th>
+      <th>10-11</th>
+    </tr>
+    <tr>
+      <th>6</th>
+      <th>Str. Victor Babes, nr. 22</th>
+      <th>ONCOLOGIE MEDICALA</th>
+      <th>PIRVULESCU ADRIANA IOANA</th>
+      <th>11-12</th>
+      <th>11-12</th>
+      <th>8-9</th>
+      <th>13-14</th>
+      <th>9-10</th>
+    </tr>
+  </table>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+  const p = document.getElementById("a");
+
+function search(){
+  let input = document.getElementById("input").value;
+
+  if(input !== ""){
+    let regExp = new RegExp(input, "gi");
+    p.innerHTML = (p.textContent).replace(regExp, "<mark>$&</mark>");
+  }
+}
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+
+</body>
+</html>

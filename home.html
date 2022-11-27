@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XYXYXYXYX5-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'UA-XYXYXYXYX5-2');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+img{
+  height: 300px;
+}
+video {
+  width: 50%;
+  height: auto;
+ 
+  margin: auto;
+}
+.searchBar{
+  width: 100px;
+  height: 30px;
+ color: black;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="proiect.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOTARI</a>
+    <a href="program.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAM MEDICI</a>
+    <a href="pret.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRETURI</a>
+    <a href="protocoale.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROTOCOALE DE DIAGNOSTIC SI TRATAMENT</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAMARI</a>
+
+
+    
+    <div id="searchBox">
+      <input class="searchBar" type="text" id="input" placeholder="Search" />
+      <input type="button" id="searchBtn" value="Search" onclick="search();" />
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="proiect.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DOTARI</a>
+  <a href="program.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROGRAM MEDICI</a>
+  <a href="pret.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRETURI</a>
+  <a href="protocoale.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROTOCOALE DE DIAGNOSTIC SI TRATAMENT</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROGRAMARI</a>
+</div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px" id="img">
+  <img src="oncologie2.jpg" style="width:100%">
+<br><br><br>
+ <p id="p"><b>Cancerul</b> cunoscut sub denumirea științifică de tumoare malignă sau neoplasm malign, este un grup de boli ce implică dezvoltarea anormală a celulelor cu potențial de a invada sau a se răspândi în alte părți ale corpului.
+  Nu toate tumorile sunt canceroase; tumorile benigne nu se răspândesc la alte organe.
+  Posibile semne și simptome includ, printre altele: un nodul nou apărut, sângerări anormale, tuse prelungită, pierdere în greutate fără explicație și modificări ale scaunelor.
+  În timp ce aceste simptome pot indica existența cancerului, acestea pot apărea și din cauza altor probleme.
+  Există peste 100 de tipuri diferite de cancer care afectează corpul uman.
+  <h4><b>Cauze</b></h4>
+  <h6><b> * Substanțe chimice</b></h6>
+  Expunerea la anumite substanțe a fost legată de anumite tipuri de cancer. Aceste substanțe se numesc agenți cancerigeni.
+
+    Fumul de tutun, de exemplu provoacă 90% din cancerul pulmonar 
+    De asemenea, provoacă cancer în laringe, cap, gât, stomac, vezică, rinichi, esofag și pancreas.
+    Fumatul conține peste cincizeci de agenți cancerigeni cunoscuți, inclusiv nitrozamine și hidrocarburi aromatice policiclice
+    Tutunul este responsabil pentru aproximativ unul din cinci decese cauzate de cancer în întreaga lume și aproximativ unul din trei în lumea dezvoltată.
+    În Europa de Vest, 10% din cazurile de cancer la bărbați și 3% în cazurile de cancer la femei sunt atribuite expunerii la alcool, în special cancerele hepatice și ale tractului digestiv.
+
+<h6><b>* Dietă și stil de viață</b> </h6>
+<h6><b>* Radiații</b></h6>
+<h6><b>* Infecții virale</b></h6>
+<ul class="a">
+<li>Hepatita B și C - ambele conduc la cancer hepatic;</li>
+<li>Virusul Papilloma HPV - cancer cervical;</li>
+<li>Citomegalovirus - duce la apariția tumorilor pe creier chiar la tinerețe;</li>
+<li>Virusul Epstein-Barr - cancerul de sânge și al sistemului limfatic;</li>
+<li>Virusul XMRV - cancerul de prostată.</li>
+</ul>
+<h6><b>* Ereditate</b></h6>
+<h6><b>* Factori fizici</b></h6>
+<h6><b>* Cauze hormonale</b></h6>
+</p>
+<br><br><br>
+<video width="150" controls>
+<source src="cancer.mp4" type="video/mp4">
+</video>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script type="text/javascript">
+  const p = document.getElementById("p");
+
+  function search(){
+    let input = document.getElementById("input").value;
+
+    if(input !== ""){
+      let regExp = new RegExp(input, "gi");
+      p.innerHTML = (p.textContent).replace(regExp, "<mark>$&</mark>");
+    }
+  }
+  function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>
